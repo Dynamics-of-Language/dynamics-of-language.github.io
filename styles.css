@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+body {
+    background-color: #e5decf;
+    font-family: 'EB Garamond', serif;
+    line-height: 1.6;
+    color: #333;
+    font-size: 1em;
+
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    flex: 3;
+    padding-right: 40px;
+}
+
+.sidenotes {
+    flex: 1;
+    background-color: #f9f3df;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; This centers child elements horizontally */
+}
+
+h1 {
+    color: #273f57;
+    font-family: "Quattrocento", serif;
+    font-weight: bold;
+    font-size: 2.6em;
+    text-align: center;
+
+}
+
+h2 {
+    color: #135159;
+    font-family: "Domine", serif;
+}
+h3{
+  color: #135159;
+  font-family: "Domine", serif;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+}
+
+body.dark-mode .sidenotes {
+    background-color: #2a2a2a;
+    border-left-color: #444;
+}
+
+body.dark-mode h1, body.dark-mode h2 {
+    color: #79ebff;
+}
+
+#darkModeToggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+body.dark-mode #darkModeToggle {
+    background-color: #456746;
+}
+
+.quattrocento-regular {
+    font-family: "Quattrocento", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .quattrocento-bold {
+    font-family: "Quattrocento", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .domine {
+    font-family: "Domine", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+pre[class*="language-"] {
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+body.dark-mode pre[class*="language-"] {
+    background: #272822; /* Okaidia theme background */
+}
+
+.eb-garamond {
+    font-family: "EB Garamond", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .caption {
+    background-color: #f0f0f0;
+    padding: 5px;
+    font-style: italic;
+    font-size: smaller;
+  }
+
+  figure {
+    /* border: 1px solid #cccccc; */
+    /* padding: 10px; */
+    margin: 0;
+    text-align: center;
+  }
+  
+  figcaption {
+    /* background-color: #f0f0f0; */
+    padding: 0px;
+    font-style: normal;
+    font-size: smaller;
+  }
+
+  a {
+    color: #6e94ac; /* Blue color, you can change this to any color you want */
+}
+
+/* Change color of visited links */
+a:visited {
+    color: #005688; /* Purple color, you can change this */
+}
+
+/* Change color when hovering over links */
+a:hover {
+    color: #6b867d; /* Red color, you can change this */
+}
+
+/* Change color of active links (when clicked) */
+a:active {
+    color: #00fff2; /* Green color, you can change this */
+}
+
+.container {
+    display: flex;
+    gap: 20px; /* Space between columns */
+  }
+  
+  .column {
+    flex: 1; /* Each column takes up equal width */
+    padding: 20px;
+    /* background-color: #f0f0f0; Optional: gives visual separation */
+  }
+  
+  /* Responsive design: stack columns on smaller screens */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+  }
+/* Add more custom styles as needed */
